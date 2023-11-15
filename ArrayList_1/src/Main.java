@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -7,7 +6,7 @@ public class Main {
         Student student1 = new Student("Francesco" , 25);
         Student student2 = new Student("Marcello" , 29);
         Student student3 = new Student("Fausto" , 27);
-        List<Student> students = new ArrayList<>();
+        ArrayList<Student> students = new ArrayList<>();
         students.add(student1);
         students.add(student2);
         students.add(student3);
