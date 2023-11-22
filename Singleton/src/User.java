@@ -27,8 +27,8 @@ public  class User {
         return instance;
     }
     public void printInfo() {
-        System.out.println("name " + name);
-        System.out.println("age " + age);
+        System.out.println("name " + name + "age " +  age);
+
     }
 
     @Override
