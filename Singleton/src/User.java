@@ -1,4 +1,4 @@
-public  class User {
+public class User {
     private String name;
     private int age;
     private static User instance;
@@ -26,8 +26,9 @@ public  class User {
         }
         return instance;
     }
+
     public void printInfo() {
-        System.out.println("name " + name + "age " +  age);
+        System.out.println("name " + name + " age " + age);
 
     }
 
