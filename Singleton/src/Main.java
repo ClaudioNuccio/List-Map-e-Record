@@ -1,14 +1,15 @@
 public class Main {
     private static User instance;
-    private static User getInstance(){
-        if (instance ==  null){
+
+    private static User getInstance() {
+        if (instance == null) {
             instance = new User("default", 0);
         }
         return instance;
     }
 
     public static void main(String[] args) {
-       User user1 = getInstance();
+        User user1 = getInstance();
         System.out.println("User 1 " + user1);
 
         user1.setAge(25);

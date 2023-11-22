@@ -4,8 +4,6 @@ public class User {
     private static User instance;
     private int age;
 
-
-
     public String getName() {
         return name;
     }
@@ -35,7 +33,7 @@ public class User {
         this.age = age;
     }
 
-    public void printInfo (){
+    public void printInfo() {
         System.out.println(name);
         System.out.println(age);
     }
