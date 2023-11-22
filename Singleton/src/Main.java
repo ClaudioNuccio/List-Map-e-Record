@@ -1,15 +1,10 @@
 public class Main {
     private static User instance;
 
-    private static User getInstance() {
-        if (instance == null) {
-            instance = new User("default", 0);
-        }
-        return instance;
-    }
+
 
     public static void main(String[] args) {
-        User user1 = getInstance();
+        User user1 = User.getInstance();
         user1.printInfo();
 
         user1.setAge(25);
@@ -17,7 +12,7 @@ public class Main {
         System.out.println("Modified user1 ");
        user1.printInfo();
 
-        User user2 = getInstance();
+        User user2 = User.getInstance();
 
         System.out.println("User2 " + user2);
         user2.setAge(32);
