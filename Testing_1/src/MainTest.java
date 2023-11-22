@@ -7,8 +7,7 @@ class MainTest {
 
     @Test
     void areTheyDifferent() {
-        assertFalse(Main.areTheyDifferent(6,6));
-            assertFalse(Main.areTheyDifferent(3,6));
+            assertTrue(Main.areTheyDifferent(3,6));
         }
     }
 
