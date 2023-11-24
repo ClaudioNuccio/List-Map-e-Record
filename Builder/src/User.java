@@ -36,11 +36,12 @@ public class User {
         this.address = address;
     }
 
-    public User(String firstName, String lastName, int age, String address) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.address = address;
+    public User(UserBuilder builder) {
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+        this.age = builder.age;
+        this.address=builder.address;
+
     }
 
     @Override

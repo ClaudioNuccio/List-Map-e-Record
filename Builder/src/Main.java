@@ -1,10 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        UserBuilder builder = new UserBuilder();
-        builder.setfirstName("Francesco");
-        builder.setlastName("Virgulini");
-        builder.setAge(42);
-        builder.setAddress("Via Garibaldi 32");
+        UserBuilder builder = new UserBuilder("Francesco","Virgulini");
+       builder.setAge(42);
+       builder.setAddress("Via Garibaldi 32");
         User firstUser = builder.build();
         builder.setfirstName("Marcello");
         builder.setlastName("Rossi");

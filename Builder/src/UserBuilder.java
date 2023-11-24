@@ -1,8 +1,8 @@
 public class UserBuilder {
-    private String firstName;
-    private String lastName;
-    private int age;
-    private String address;
+    public String firstName;
+    public String lastName;
+    public int age;
+    public String address;
 
 
     public UserBuilder setfirstName(String firstName) {
@@ -25,6 +25,10 @@ public class UserBuilder {
         return this;
     }
     public User build (){
-        return new User(firstName,lastName,age,address);
+        return new User(this);
+    }
+    public UserBuilder (String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 }
